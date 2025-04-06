@@ -1,0 +1,159 @@
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 70px;
+    height: 97vh;
+    background: #a77c2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 12px;
+}
+.navbar{
+    z-index: 9999 !important;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.sidebar .icon,
+.offcanvas-body .icon {
+    width: 40px;
+    min-height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0px 0 15px 0;
+    color: white;
+    font-size: 16px;
+}
+.sidebar .icon.active,
+.offcanvas-body .icon.active{
+    background-color: white ;
+    color: black;
+    &:hover{
+        background-color: white;
+    }
+}
+
+.sidebar .icon:hover,
+.offcanvas-body .icon:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.content {
+    margin-left: 90px;
+    padding: 15px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.offcanvas {
+    width: 90px !important;
+    background: #a77c2e !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 999999 !important;
+}
+
+.offcanvas.offcanvas-start {
+    top: 8px !important;
+    left: 8px !important;
+    height: 97vh !important;
+    border-radius: 10px;
+}
+
+@media (max-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+.header-wel {
+    background: #fff0d59c;
+    border: 2px solid #a77c2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a77c2e;
+    padding: 25px 0;
+    border-radius: 10px;
+}
+
+.card-wrapper-sm {
+    border-radius: 10px;
+    background: #fff0d59c;
+}
+
+.custom-card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.favorite-icon {
+    font-size: 1rem;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.favorite {
+    color: red;
+}
+.bottom50{
+    bottom: -13px;
+}
+.gray{
+    color: gray;
+}
+.pink {
+    color: rgb(242, 60, 133) !important;
+}
+.green{
+    color: rgb(48, 153, 60) !important;
+}
+.badge.border-pink{
+    border:1px solid rgb(242, 60, 133) !important;
+}
+.badge.border-green{
+    border:1px solid rgb(48, 153, 60) !important;
+}
+.h50 {
+    height: 200px;
+}
+
+.top-10{
+    top: 15px !important;
+}
+.like-btn {
+    min-height: 30px;
+    min-width: 30px;
+    background-color: white;
+    padding: 20px;
+}
+.bg-white-light{
+    background: rgba(255, 255, 255, 0.16);
+    padding: 10px 5px 1px;
+}
